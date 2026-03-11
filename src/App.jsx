@@ -7,7 +7,7 @@ export default function App() {
   let Entries = data.map((d)=>{
     return <Entry 
     key = {d.id}
-    e = {d}
+    {...d}
     />
   })
   return (
